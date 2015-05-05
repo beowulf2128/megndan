@@ -1,0 +1,5 @@
+<h1>Gijoes</h1>
+<p>Add a <%= link_to 'new joe', new_gijoe_path %> </p>
+<% @joes.each do |joe| %>
+  <p><%= joe.name %> <%= link_to 'view', gijoe_path(joe)%></p>
+<% end %>

@@ -1,0 +1,24 @@
+<h1>New Gijoe</h1>
+<%= form_for :gijoe, url: gijoes_path  do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :yojoe_url %><br>
+    <%= f.text_field :yojoe_url %>
+  </p>
+  <p>
+    <%= f.label :condition %><br>
+    <%= f.text_field :condition %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
