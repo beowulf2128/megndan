@@ -17,4 +17,5 @@
 
 ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'gijoe', 'gijoes'
+  inflect.irregular 'person', 'persons' # DA doesn't want a People table
 end

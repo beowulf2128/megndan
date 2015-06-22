@@ -1,0 +1,41 @@
+<h1>Create new person</h1>
+<%= link_to 'back to persons', persons_path %>
+
+<%= form_for :person, url: persons_path do |f| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">Name Details </div>
+    <div class="panel-body">
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :middle_name %><br>
+    <%= f.text_field :middle_name %>
+  </p>
+  <p>
+    <%= f.label :last_name%><br>
+    <%= f.text_field :last_name %>
+  </p>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Other Details </div>
+    <div class="panel-body">
+  <p>
+    <%= f.label :birthdate %><br>
+    <%= f.text_field :birthdate, {:'data-provide'=> 'datepicker'} %>
+  </p> 
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.select :gender, ['', 'Male','Female'] %>
+  </p>
+    </div>
+  </div>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+

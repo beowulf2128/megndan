@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  #get 'gijoes/list'
 
-  #get 'gijoes/edit'
+  resources :persons
   resources :gijoes
   get 'show_yojoe/:id' => 'gijoes#show_yojoe'
 
