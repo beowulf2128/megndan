@@ -17,3 +17,8 @@
 /tmp
 
 *.swp
+
+.byebug_history
+*fixtures/*
+/public/packs
+/node_modules
